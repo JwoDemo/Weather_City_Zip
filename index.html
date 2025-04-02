@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather & Clothing Recommender</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Weather & Clothing Recommender</h1>
+        <div class="search-type-toggle">
+            <button class="toggle-btn active" id="zipToggle">ZIP Code</button>
+            <button class="toggle-btn" id="cityToggle">City & State</button>
+        </div>
+        <div class="search-container" id="zipSearch" style="display: flex;">
+            <input type="text" id="zipCode" placeholder="Enter your ZIP code" maxlength="5">
+            <button id="zipSearchBtn">Get Weather</button>
+        </div>
+        <div class="search-container" id="citySearch" style="display: none;">
+            <input type="text" id="city" placeholder="Enter city name">
+            <input type="text" id="state" placeholder="Enter state (e.g., NY)" maxlength="2">
+            <button id="citySearchBtn">Get Weather</button>
+        </div>
+        <div class="weather-container" id="weatherInfo">
+            <!-- Weather info will be displayed here -->
+        </div>
+        <div class="hourly-forecast-container" id="hourlyForecast">
+            <!-- Hourly forecast will be displayed here -->
+        </div>
+        <div class="clothing-container" id="clothingInfo">
+            <!-- Clothing recommendations will be displayed here -->
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 
